@@ -1,0 +1,48 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: white;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+
+      @include mobile {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 30px;
+      margin-top: 10px;
+    }
+    .contacts {
+      margin: 10px;
+
+      a {
+        margin: 10px;
+      }
+    }
+  }
+}
